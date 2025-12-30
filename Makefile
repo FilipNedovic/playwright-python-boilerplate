@@ -101,16 +101,17 @@ show-python:
 	@$(PYTHON) -m flake8 --version || true
 
 
-cletean:
+clean:
 	@echo "$(YELLOW)Cleaning up...$(NC)"
 	rm -rf reports/
 	rm -rf .pytest_cache/
 	rm -rf .mypy_cache/
-	rm -rf .coverage
+	rm -rf .ruff_cache/
 	rm -rf __pycache__/
 	rm -rf */__pycache__/
 	rm -rf */*/__pycache__/
-	rm -rf recordings/
+	rm -rf *.egg-info/
+	rm -rf src/*.egg-info/
 	find . -type f -name "*.pyc" -delete
 	find . -type d -name "__pycache__" -delete
 
