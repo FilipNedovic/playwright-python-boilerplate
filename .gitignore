@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+*.egg-info/
+
+src/*.egg-info/
+
+# Environment files
+.env
+.env.local
+
+# Playwright
+playwright/.cache/
+playwright/browsers/
+*.trace
+playwright-report/
+test-results/
+
+# Reports and outputs
+reports/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# OS files
+Thumbs.db
